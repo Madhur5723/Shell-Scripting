@@ -1,5 +1,7 @@
 #!/bin/bash
 
+while true 
+do	
 echo "Provide an option"
 echo "Press 1-----Science"
 echo "Press 2-----Maths"
@@ -16,5 +18,6 @@ case $choice in
     4) echo "Goodbye!"; exit;;
     *) echo "Invalid Input";;
 esac
+done
                                                                      
       

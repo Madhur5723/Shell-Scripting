@@ -1,11 +1,9 @@
 #!/bin/bash
 
-read -p "Enter the file path: " filepath
+read -p "filename" $file
 
-# Check if the file exists
-if test -f "$filepath"; then
-    echo "File exists."
+if [[ -f /home/einfochips/$file ]];then
+	echo "Exists"
 else
-    echo "No file exists check path Again"
+	echo "Not Exists"
 fi
-
