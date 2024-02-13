@@ -1,9 +1,11 @@
 ---
 - name: Install Nginx/Apache
-  hosts: servers
+  hosts: all
   become: yes
   tasks:
-          -name: Install Nginx
-          apt:
-                  name: nginx
-                  state: latest
+       -name: Install Nginx
+        apt:
+           name: nginx
+           state: latest
+       -name: index.html
+        action: copy=index.html dest=/var/www/html/
